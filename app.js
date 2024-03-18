@@ -37,7 +37,7 @@ app.set('view engine', 'jade');
 
 
 // Middleware
-app.use(cors({ origin: ['https://mern-stack-turf-booking.onrender.com','http://localhost:3000']}));
+app.use(cors({ origin: ['https://bookyourturff-frontend.onrender.com','http://localhost:3000']}));
 app.use(logger('dev'));
 
 app.use(express.json());
