@@ -1,0 +1,16 @@
+// timingRoutes.js
+
+const express = require('express');
+const router = express.Router();
+const { Time } = require('../constants'); // Adjust the path accordingly
+
+router.get('/getAvailableTimings', (req, res) => {
+  try {
+    res.json(Time);
+  } catch (error) {
+    console.error('Error getting available timings:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+module.exports = router;
