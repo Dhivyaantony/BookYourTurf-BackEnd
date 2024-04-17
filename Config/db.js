@@ -3,7 +3,7 @@ const mongoose =require('mongoose')
 
 const connectDb=async ()=>{
     try{
-        const connection=await mongoose.connect('mongodb+srv://dhivyaantony778:fcIQSaa2dbfaARhO@cluster0.qwptlxc.mongodb.net/',{
+        const connection=await mongoose.connect('mongodb+srv://dhivyaantony778:fcIQSaa2dbfaARhO@cluster0.qwptlxc.mongodb.net/book',{
             useNewUrlParser:"true"
             //useUnifiedTopology: "true"
         })
